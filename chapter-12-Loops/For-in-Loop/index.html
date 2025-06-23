@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For of Loop</title>
+  </head>
+  <body>
+    <p>
+      The JavaScript for in statement loops through the properties of an Object:
+      <br />
+
+      Syntax <br />
+      for (key in object) { // code block to be executed }
+    </p>
+  </body>
+  <script>
+    let myobj={
+      name:"uzair",
+      age:22,
+      phone:"03149535884"
+    }
+    for (const i in myobj) {
+    document.writeln(i +" "+myobj[i] + "<br>")
+    }
+  </script>
+</html>
