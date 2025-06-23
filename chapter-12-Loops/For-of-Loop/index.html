@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For...in Loop</title>
+</head>
+<body>
+  <p>
+    The JavaScript <code>for...in</code> statement loops through the **keys** of an object:<br>
+    <code>for (key in object) { /* code */ }</code>
+  </p>
+</body>
+<script>
+  let myobj = {
+    name: "uzaIR",
+    AGE: "22"
+  };
+
+  for (const key in myobj) {
+    document.writeln(key + ": " + myobj[key] + "<br>");
+  }
+</script>
+</html>
