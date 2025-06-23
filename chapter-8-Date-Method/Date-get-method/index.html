@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>get date</title>
+</head>
+<body>
+  Method	Description <br>
+getFullYear()	Get year as a four digit number (yyyy) <br>
+getMonth()	Get month as a number (0-11) <br>
+getDate()	Get day as a number (1-31) <br>
+getDay()	Get weekday as a number (0-6) <br>
+getHours()	Get hour (0-23) <br>
+getMinutes()	Get minute (0-59) <br>
+getSeconds()	Get second (0-59)
+getMilliseconds()	Get millisecond (0-999) <br>
+getTime()	Get time (milliseconds since January 1, 1970) <br> <br> <br> <hr>
+</body>
+<script>
+  const date=new Date();
+  document.writeln(date,"<hr>");
+  document.writeln(date.getDate() ,"<hr>");
+  document.writeln(date.getFullYear() ,"<hr>");
+  document.writeln(date.getDay() ,"<hr>");
+  document.writeln(date.getHours() ,"<hr>");
+  document.writeln(date.getMilliseconds() ,"<hr>");
+  document.writeln(date.getMinutes() ,"<hr>");
+  document.writeln(date.getMonth() ,"<hr>");
+</script>
+
+</html>
