@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>If else</title>
+</head>
+<body>
+  <p>Conditional Statements
+Very often when you write code, you want to perform different actions for different decisions.
+
+You can use conditional statements in your code to do this.
+
+In JavaScript we have the following conditional statements:
+
+Use if to specify a block of code to be executed, if a specified condition is true
+Use else to specify a block of code to be executed, if the same condition is false
+Use else if to specify a new condition to test, if the first condition is false
+Use switch to specify many alternative blocks of code to be executed <hr>
+</p>
+</body>
+<script>
+  // if statement 
+  const name="uzairkhan";
+  if(name=="uzairkhan"){
+    document.writeln(name ,"<br>")
+  }
+  // if else 
+  const Name="uzair";
+  if(Name =="uzairkhan"){
+    document.writeln("Name is equal  ")
+  }
+  else{
+       document.writeln("Name is not equal to uzairkhan <br>" )
+  }
+  // else if 
+  let num1=20;
+  let num2=30;
+  let num3=40;
+  if(num1>num2 && num1>num3){
+     document.writeln("Num 1 is greater than all <br>" )
+  }
+  else if(num2>num1&& num2>num3)
+  {
+    document.writeln("Num 2 is greater than all <br>" )
+  }
+  else{
+    document.writeln("Num 3 is greater than all <br>" )
+  }
+</script>
+</html>
