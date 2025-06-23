@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Method</title>
+  </head>
+  <body></body>
+  <script>
+      let rolnm = 200;
+      let a = rolnm.toString();      // convert number to string
+      document.writeln(a);           // print the value
+      document.writeln(typeof a + "<br>");    // print the type
+      // toExponential()	Returns a number written in exponential notation
+      let b=rolnm.toExponential();
+        document.writeln(b + "<br>");
+        // toFixed()	Returns a number written with a number of decimals
+        let dec=2.43522;
+        let c=dec.toFixed(3);
+        document.writeln(c);
+        // toPrecision() returns a string, with a number written with a specified length  same is to fixed
+    //     Number.isInteger()	Returns true if the argument is an integer
+    // Number.isSafeInteger()	Returns true if the argument is a safe integer
+    // Number.parseFloat()	Converts a string to a number
+    // Number.parseInt()	Converts a string to a whole number
+  </script>
+</html>
