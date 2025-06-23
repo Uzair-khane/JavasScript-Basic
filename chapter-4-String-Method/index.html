@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Method</title>
+  </head>
+  <body></body>
+  <script>
+      // length method in javascript
+      const name="Uzair khan"
+      document.writeln(name.length + "<br>")
+    // The charAt() method returns the character at a specified index (position) in a string:
+    document.writeln(name.charAt(3)+ "<br>");
+    // The charCodeAt() method returns the code of the character at a specified index in a string:// The method returns a UTF-16 code (an integer between 0 and 65535) 
+    document.writeln(name.charCodeAt(1)+ "<br>");
+    // slice() extracts a part of a string and returns the extracted part in a new string.The method takes 2 parameters: start position, and end position (end not included).
+    document.writeln(name.slice(1,6)+ "<br>");
+    // substring() is similar to slice().The difference is that start and end values less than 0 are treated as 0 in substring()
+    document.writeln(name.substring(1,8)+ "<br>");
+      document.writeln(name.toLowerCase()+ "<br>");
+      document.writeln(name.toUpperCase()+ "<br>");
+      document.writeln(name.trim()+ "<br>");
+      document.writeln(name.repeat(3)+ "<br>");
+      document.writeln(name.replace("khan","Khalil")+ "<br>");
+  </script>
+</html>
