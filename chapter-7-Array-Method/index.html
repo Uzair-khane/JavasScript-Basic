@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Array method</title>
+</head>
+<body>
+  <p>Array length	Returns the length (size) of an array
+Array toString()	Converts an array to a comma separated string of values
+Array at()	Returns an indexed element from an array
+Array join()	Joins all array elements into a string
+Array pop()	Removes the last element from an array
+Array push()	Adds a new element to an array
+Array shift()	Removes the first array element
+Array unshift()	Adds a new element at the beginning of an array
+Array delete()	Creates undefined holes in the array
+Array concat()	Creates a new array by merging existing arrays
+Array copyWithin()	Copies array elements to another position in the array
+Array flat()	Creates a new array from sub-array elements
+Array slice()	Slices out a part of an array
+Array splice()	Adds new items to an array
+Array toSpliced()	Adds new items to an array in a new array
+See Also:
+Search Methods	Different array index or find methods
+Sort Methods	Different array sort methods
+Iteration Methods	Different array ineration methods</p>
+<br><br> <hr><hr>
+
+</body>
+
+ <script>
+// length method 
+const cars=["civic","BMW","Surf"]
+document.writeln(cars.length ,"<br>","<hr>")
+// toString method 
+const num=[23,42,5,2];
+ let a=document.writeln(num.toString() ,"<br>","<hr>")
+//  The join() method also joins all array elements into a string 
+document.writeln(cars.join("/ ") ,"<br>","<hr>");
+// The pop() method removes the last element from an array: 
+ let b=cars.pop();
+ document.writeln(b,"<br>","<hr>");
+ document.writeln(cars ,"<br>","<hr>");
+//  The push() method adds a new element to an array (at the end): 
+let c=cars.push("toyota");
+ document.writeln(c,"<br>","<hr>");
+ document.writeln(cars ,"<br>","<hr>");
+//  The shift() method removes the first array element and "shifts" all other elements to a lower index. 
+let d=cars.shift();
+ document.writeln(c,"<br>","<hr>");
+ document.writeln(cars ,"<br>","<hr>");
+//  The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements: 
+let e=cars.unshift("united");
+ document.writeln(e,"<br>","<hr>");
+ document.writeln(cars ,"<br>","<hr>");
+//  The splice() method adds new items to an array. 
+const f=cars.splice(0,1,"Honda");
+ document.writeln(cars ,"<br>","<hr>");
+//  The slice() method creates a new array.
+// The slice() method does not remove any elements from the source array.
+const i=cars.slice(0,2);
+ document.writeln(i ,"<br>","<hr>");
+ </script>
+</html>
