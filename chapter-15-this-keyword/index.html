@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>this keyword </title>
+</head>
+<body>
+  <h1>What is this?
+In JavaScript, the this keyword refers to an object.</h1>
+</body>
+<script>
+  const myobj={
+    fname:"uzair",
+    lname:"khan",
+    fulname:function(){
+      return this.fname+this.lname;
+    }
+  }
+  document.writeln(myobj.fulname())
+</script>
+</html>
