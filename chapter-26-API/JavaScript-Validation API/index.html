@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Validation API</title>
+</head>
+<body>
+  <h1>checkValidity()	Returns true if an input element contains valid data.</h1> <br>
+  <input type="number" id="input" min="100" max="300">
+   <button id="btn" onclick="myfun()">Check it</button>
+   <p id="pera"></p>
+</body>
+<script>
+  function myfun(){
+    let input=document.getElementById("input");
+    if(!input.checkValidity()){
+      let para=document.getElementById("pera").innerHTML= input.validationMessage;
+    }
+    else{
+    document.getElementById("pera").innerHTML="input is ok"
+    }
+  }
+</script>
+</html>
