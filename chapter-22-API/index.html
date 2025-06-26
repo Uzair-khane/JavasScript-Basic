@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      #container-div {
+        display: grid;
+        background-color: rgba(129, 127, 127, 0.171);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        gap: 20px;
+        padding: 30px;
+      }
+      img {
+        width: 250px;
+        height: 250px;
+        margin-top: 20px;
+        padding-left: 40px;
+      }
+      .card {
+        background-color: rgba(255, 255, 255, 0.986);
+        padding: 10px;
+        border-radius: 6px;
+        box-shadow: 0px 2px 3px black;
+      }
+      h2 {
+        font-size: 18px;
+        padding: 30px;
+        text-transform: capitalize;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+      }
+      p {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        padding-left: 30px;
+        padding-top: 20px;
+        font-size: 14px;
+      }
+    </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    
+    <div id="container-div">
+    
+    </div>
+  </body>
+  <script>
+    async function myFun() {
+      try {
+        const api = await fetch("https://fakestoreapi.com/products");
+        const product = await api.json();
+        console.log(product);
+        let container = document.getElementById("container-div");
+        product.forEach((item) => {
+          let card = document.createElement("div");
+          card.setAttribute("class", "card");
+          card.innerHTML = `
+     <h2>${item.title}</h2>
+     <img src="${item.image}" alt="">
+        <p>${item.description}</p>
+        
+     `;
+          container.appendChild(card);
+        });
+      } catch (err) {
+        console.log(err);
+      }
+    }
+
+    myFun();
+  </script>
+</html>

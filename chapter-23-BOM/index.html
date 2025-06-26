@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>js BOM</title>
+  </head>
+  <body>
+    <h1>The Browser Object Model (BOM)</h1>
+    <p>
+      There are no official standards for the Browser Object Model (BOM). Since
+      modern browsers have implemented (almost) the same methods and properties
+      for JavaScript interactivity, it is often referred to, as methods and
+      properties of the BOM.
+    </p>
+  </body>
+  <script>
+    let inner = window.innerHeight;
+    let outer = window.outerHeight;
+    console.log("Inner Height is : ", inner);
+    console.log("outer Height is : ", outer);
+    // same is for width 
+    let open=window.open();
+    // for page link 
+    let pageLocation=window.location.href;
+    console.log(pageLocation);
+    // for page path name 
+    let path=window.location.pathname;
+    console.log(path);
+    // for browser history 
+  let history=window.history;
+  console.log(history);
+ window.alert("Hello");
+ window.confirm("chose one");
+ window.prompt("Enter Your Name")
+ 
+ 
+    
+
+  
+    
+    
+    
+    
+  </script>
+</html>
