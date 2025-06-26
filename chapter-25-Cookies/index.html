@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookies</title>
+</head>
+<body>
+  <p>Cookies let you store user information in web pages.</p>
+
+  <h1>JS Cookies</h1>
+  <input type="text" id="name" placeholder="Enter your name"><br>
+  <input type="text" id="rol" placeholder="Enter your roll number"><br>
+  <button id="Set">Set Cookie</button>
+  <button id="get">Get Cookie</button>
+
+  <script>
+    const Elname = document.getElementById("name");
+    const Elvalue = document.getElementById("rol");
+
+    document.getElementById("Set").addEventListener("click", () => {
+      let name = Elname.value;
+      let value = Elvalue.value;
+
+      // Set cookie in correct format
+      document.cookie = `${name}=${value}`;
+      alert("Cookie Set!");
+    });
+
+    document.getElementById("get").addEventListener("click", () => {
+      alert("Cookies: " + document.cookie);
+    });
+  </script>
+</body>
+</html>
